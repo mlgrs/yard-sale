@@ -1,14 +1,17 @@
 const menuEmail = document.querySelector('.navbar-email');
 const menuHamIcon = document.querySelector('.menu');
 const menuCartIcon = document.querySelector('.navbar-shopping-cart');
+const productDetailCloseIcon = document.querySelector('.product-detail-close');
 const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const aside = document.querySelector('.product-detail');
+const productDetailContainer = document.querySelector('.product-detail-secondary');
 const cardsContainer = document.querySelector('.cards-container');
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuHamIcon.addEventListener('click', toggleMobileMenu);
 menuCartIcon.addEventListener('click', toggleCartAside);
+productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
 
 
 function toggleDesktopMenu() {
@@ -27,6 +30,7 @@ function toggleMobileMenu() {
   if (!isAsideClosed) {
     aside.classList.add('inactive');
   }
+  closeProductDetailAside();
 
   mobileMenu.classList.toggle('inactive');
 }
@@ -38,26 +42,30 @@ function toggleCartAside() {
     mobileMenu.classList.add('inactive');
   }
 
+  const isproductDetailClosed = productDetailContainer.classList.contains('inactive');
+
+  if (!isproductDetailClosed) {
+    productDetailContainer.classList.add('inactive');
+  }
+
   aside.classList.toggle('inactive');
 }
 
+function openProductDetailAside() {
+  aside.classList.add('inactive');
+  productDetailContainer.classList.remove('inactive');
+}
+
+function closeProductDetailAside() {
+  productDetailContainer.classList.add('inactive');
+}
 
 
 const productList = [];
 productList.push({
-  name: 'Bike',
-  price: 120,
-  image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-});
-productList.push({
   name: 'Vintage TV',
   price: 200,
   image: 'https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-});
-productList.push({
-  name: 'Mechanical Keyboard',
-  price: 300,
-  image: 'https://preview.redd.it/zzoxvy7puy131.jpg?auto=webp&s=a9132841a3ff076e13e97503d6568180e3628fa7',
 });
 
 for (product of productList) {
@@ -66,6 +74,7 @@ for (product of productList) {
 
   const productImg = document.createElement('img');
   productImg.setAttribute('src', product.image);
+  productImg.addEventListener('click', openProductDetailAside);
 
   const productInfo = document.createElement('div');
   productInfo.classList.add('product-info');

@@ -219,6 +219,7 @@ nav {
 }
 .shopping-cart figure {
     margin: 0;
+    cursor: pointer;
 }
 .shopping-cart figure img {
     width: 70px;
@@ -250,6 +251,7 @@ nav {
     height: 240px;
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
   }
   .product-info {
     display: flex;
@@ -297,6 +299,7 @@ nav {
     justify-content: center;
 }
 .product-detail-secondary {
+    background-color: var(--white);
     width: 360px;
     padding-bottom:24px;
     position: absolute;
