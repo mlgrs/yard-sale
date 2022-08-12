@@ -146,17 +146,13 @@ nav {
 .mobile-menu ul li {
     margin-bottom: 24px;
 }
-.mobile-menu .email {
+.email {
     font-size: var(--sm);
-    font-weight: 300;
+    font-weight: 300 !important;
 }
-.mobile-menu .sign-out {
-    color: var(--hospital-green);
-    font-size: var(--sm);
-}
-.mobile-menu ul:nth-child(3){
-    position: absolute;
-    margin-bottom: 15px;
+.sign-out {
+    color: var(--hospital-green)!important;
+    font-size: var(--sm)!important;
 }
 
 /* Aside product detail */
