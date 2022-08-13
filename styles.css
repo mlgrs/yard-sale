@@ -346,11 +346,7 @@ nav {
     margin-bottom: 36px;
     color: var(--very-light-pink);
 }
-@media (max-width: 640px) {
-    .product-detail {
-        width: 100%;
-    }
-}
+
 
 
 @media (max-width: 640px) {
@@ -381,6 +377,9 @@ nav {
         height: 50px;
         width: 150px;
         justify-content: space-evenly;
+    }
+    .product-detail {
+        width: 100%;
     }
 }
 
