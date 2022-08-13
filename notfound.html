@@ -20,17 +20,17 @@
         <img src="./icons/icon_menu.svg" alt="menu" class="menu" />
 
         <div class="navbar-left">
-            <img src="./logos/favicon_yard_sale.svg" alt="logo" class="logo">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
 
             <ul>
                 <li>
-                    <a href="">All</a>
+                    <a href="index.html">All</a>
                 </li>
                 <li>
                     <a href="notfound.html">Clothes</a>
                 </li>
                 <li>
-                    <a href="login.html">Electronics</a>
+                    <a href="index.html">Electronics</a>
                 </li>
                 <li>
                     <a href="notfound.html">Furniture</a>
@@ -46,10 +46,10 @@
 
         <div class="navbar-right">
             <ul>
-                <li class="navbar-email">Sign up</li>
+                <li class="navbar-email">email@example.com</li>
                 <li class="navbar-shopping-cart">
                     <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" />
-                    <div></div>
+                    <div>1</div>
                 </li>
             </ul>
         </div>
@@ -57,7 +57,7 @@
         <div class="desktop-menu inactive">
             <ul>
               <li>
-                <a href="" class="title">My orders</a>
+                <a href="#" class="title">My orders</a>
               </li>
       
               <li>
@@ -106,7 +106,6 @@
                 <li>
                     <a href="" class="email">youremail@email.com</a>
                 </li>
-                
                 <li>
                     <a href="login.html" class="sign-out">Sign out</a>
                 </li>
@@ -114,24 +113,49 @@
         </div>
     </nav>
 
-     <div class="login">
-        <div class="form-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo-login">
 
-            <form action="index.html" class="form">
-                <label for="email" class="label">Email address</label>
-                <input type="email" id="email" placeholder="youremail@email.com" class="input input-email">
-
-                <label for="passwrd" class="label">Password</label>
-                <input type="password" id="passwrd" placeholder="*********" class="input input-password">
-
-                <input type="submit" value="Log in" class="primary-button login-button">
-                <a href="./password_recovery.html">Forgot my password</a>
-            </form>
-
-            <button onclick="location.href='index.html'" class="secondary-button signup-button">Sign up</button>
+    <aside class="product-detail inactive">
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="arrow">
+            <p class="title">Shopping cart</p>
         </div>
+        
+        <div class="my-order-content">
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'"
+                        alt="vintage tv">
+                </figure>
+                <p>Vintage TV</p>
+                <p>$200,00</p>
+                <img src="./icons/icon_close.png" alt="">
+            </div>
+
+            <div class="order">
+                <p>
+                    <span>Total</span>
+                </p>
+                <p>$200.00</p>
+            </div>
+            <button class="primary-button">
+                Checkout
+            </button>
+    </aside>
+
+    <div class="not-found">
+        <span>There's nothing here yet.</span>
+        <div class="ilustration-not-found">
+            <img src="./logos/error.png" alt="not found">
+        </div>
+        <span>More items coming soon!</span> 
     </div>
+    
+    <aside class="product-detail-secondary inactive">
+        <div class="product-detail-close">
+            <img src="./icons/icon_close.png" alt="close">
+        </div>
+
+
     <script src="./main.js"></script>
 </body>
 </html>
