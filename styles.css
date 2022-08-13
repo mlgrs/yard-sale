@@ -156,7 +156,7 @@ nav {
 }
 
 /* Aside product detail */
-.primary-button {
+.primary-button-checkout {
     background-color: var(--hospital-green);
     border-radius: 8px;
     border: none;
@@ -291,7 +291,7 @@ nav {
     cursor: pointer;
     font-size: var(--md);
     font-weight: bold;
-    height: 50px;
+    height: 200px;
 }
 .add-to-cart-button {
     display: flex;
@@ -358,6 +358,7 @@ nav {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    padding: 0;
   }
 .title {
     font-size: var(--lg);
@@ -409,7 +410,7 @@ nav {
     margin-bottom: 16px;
 }
 .logo-login {
-    width: 100%;
+    width: 80%;
     margin-bottom: 60px;
     justify-content: center;
 }
@@ -419,6 +420,91 @@ nav {
     text-decoration: none;
     padding: 8px;
 }
+.title-recovery {
+    font-size: var(--md);
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+}
+.subtitle-recovery {
+    font-size: var(--md);
+    color: var(--very-light-pink);
+    text-align: center;
+    padding-bottom: 34px;
+}
+.label-recovery {
+    font-size: var(--sm);
+    font-weight: 900;
+    padding: 8px;
+}
+.submit-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.login a{
+    color: var(--hospital-green);
+    text-decoration: none;
+    height: 170%;
+
+}
+.signup-button {
+    bottom: 0;
+}
+.subtitle-email {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.email-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.email-image img {
+    width: 80px;
+}
+.resend {
+    font-size: var(--sm);
+}
+.resend span {
+    color: var(--very-light-pink);
+}
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+.resend-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 60px;
+}
+.form-container-resend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 0;
+  }
 
 @media (max-width: 640px) {
     .menu{
@@ -458,6 +544,9 @@ nav {
     }
     .signup-button {
         bottom: 0;
+    }
+    .logo {
+        display: block;
     }
 
 }
