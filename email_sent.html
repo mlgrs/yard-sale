@@ -20,17 +20,17 @@
         <img src="./icons/icon_menu.svg" alt="menu" class="menu" />
 
         <div class="navbar-left">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <img src="./logos/favicon_yard_sale.svg" alt="logo" class="logo">
 
             <ul>
                 <li>
-                    <a href="/">All</a>
+                    <a href="index.html">All</a>
                 </li>
                 <li>
                     <a href="notfound.html">Clothes</a>
                 </li>
                 <li>
-                    <a href="/">Electronics</a>
+                    <a href="index.html">Electronics</a>
                 </li>
                 <li>
                     <a href="notfound.html">Furniture</a>
@@ -46,10 +46,10 @@
 
         <div class="navbar-right">
             <ul>
-                <li class="navbar-email">email@example.com</li>
+                <li class="navbar-email">Sign up</li>
                 <li class="navbar-shopping-cart">
                     <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" />
-                    <div>1</div>
+                    <div></div>
                 </li>
             </ul>
         </div>
@@ -57,15 +57,15 @@
         <div class="desktop-menu inactive">
             <ul>
               <li>
-                <a href="" class="title">My orders</a>
+                <a href="#" class="title">My orders</a>
               </li>
       
               <li>
-                <a href="/" class="title">My account</a>
+                <a href="myaccount.html" class="title">My account</a>
               </li>
       
               <li>
-                <a href="/" class="title">Sign out</a>
+                <a href="login.html" class="title">Sign out</a>
               </li>
             </ul>
         </div>     
@@ -108,62 +108,31 @@
                 </li>
                 
                 <li>
-                    <a href="login.html" class="sign-out">Sign out</a>
+                    <a href="" class="sign-out">Sign out</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <aside class="product-detail inactive">
-        <div class="title-container">
-            <img src="./icons/flechita.svg" alt="arrow">
-            <p class="title">Shopping cart</p>
-        </div>
-        
-        <div class="my-order-content">
-            <div class="shopping-cart">
-                <figure>
-                    <img src="https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'"
-                        alt="vintage tv">
-                </figure>
-                <p>Vintage TV</p>
-                <p>$200,00</p>
-                <img src="./icons/icon_close.png" alt="">
+
+    <div class="login">
+        <div class="form-container-resend">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+            <h1 class="title">Email has been sent!</h1>
+            <p class="subtitle-email">Please check your inbox for your instructions on how to reset the password</p>
+
+            <div class="email-image">
+                <img src="./icons/email.svg" alt="">
             </div>
 
-            <div class="order">
-                <p>
-                    <span>Total</span>
-                </p>
-                <p>$200.00</p>
-            </div>
-            <button class="primary-button-checkout">
-                Checkout
-            </button>
-    </aside>
-    <aside class="product-detail-secondary inactive">
-        <div class="product-detail-close">
-            <img src="./icons/icon_close.png" alt="close">
+            <button class="primary-button resend-button">Login</button>
+
+            <p class="resend">
+                <span>Didn't receive the email?</span>
+                <a href="password_recovery.html">Resend</a>
+            </p>
         </div>
-        
-        <img src="https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'" alt="vintage tv">
-        <div class="product-info-secondary">
-            <p>$200</p>
-            <p>Vintage TV</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt, harum expedita adipisci.</p>
-            <button class="primary-button add-to-cart-button">
-                <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
-                Add to cart
-            </button>
-        </div>
-    </aside>
-
-
-    <section class="main-container">
-        <div class="cards-container">
-
-        </div>
-    </section>  
-
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>

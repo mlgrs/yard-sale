@@ -20,17 +20,17 @@
         <img src="./icons/icon_menu.svg" alt="menu" class="menu" />
 
         <div class="navbar-left">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <img src="./logos/favicon_yard_sale.svg" alt="logo" class="logo">
 
             <ul>
                 <li>
-                    <a href="/">All</a>
+                    <a href="index.html">All</a>
                 </li>
                 <li>
                     <a href="notfound.html">Clothes</a>
                 </li>
                 <li>
-                    <a href="/">Electronics</a>
+                    <a href="index.html">Electronics</a>
                 </li>
                 <li>
                     <a href="notfound.html">Furniture</a>
@@ -61,11 +61,11 @@
               </li>
       
               <li>
-                <a href="/" class="title">My account</a>
+                <a href="myaccount.html" class="title">My account</a>
               </li>
       
               <li>
-                <a href="/" class="title">Sign out</a>
+                <a href="login.html" class="title">Sign out</a>
               </li>
             </ul>
         </div>     
@@ -113,6 +113,7 @@
             </ul>
         </div>
     </nav>
+
     <aside class="product-detail inactive">
         <div class="title-container">
             <img src="./icons/flechita.svg" alt="arrow">
@@ -136,34 +137,38 @@
                 </p>
                 <p>$200.00</p>
             </div>
-            <button class="primary-button-checkout">
+            <button class="primary-button">
                 Checkout
             </button>
     </aside>
-    <aside class="product-detail-secondary inactive">
-        <div class="product-detail-close">
-            <img src="./icons/icon_close.png" alt="close">
+
+    <div class="login">
+        <div class="form-container">
+          <h1 class="title">My account</h1>
+  
+          <form action="/" class="form">
+            <div>
+              <label for="name" class="label">Name</label>
+              <p class="value">Your name</p>
+  
+              <label for="email" class="label">Email</label>
+              <p class="value">youremail@email.com</p>
+  
+              <label for="passwrd" class="label">Password</label>
+              <p class="value">********</p>
+            </div>
+  
+            <a href="./new-password.html"><input
+              type="submit"
+              value="Edit"
+              
+              class="secondary-button login-button"
+              
+              
+            /></a> 
+          </form>
         </div>
-        
-        <img src="https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'" alt="vintage tv">
-        <div class="product-info-secondary">
-            <p>$200</p>
-            <p>Vintage TV</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt, harum expedita adipisci.</p>
-            <button class="primary-button add-to-cart-button">
-                <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
-                Add to cart
-            </button>
-        </div>
-    </aside>
-
-
-    <section class="main-container">
-        <div class="cards-container">
-
-        </div>
-    </section>  
-
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
